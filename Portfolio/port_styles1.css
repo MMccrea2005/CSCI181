@@ -9,7 +9,7 @@ display: block;
 
 /* Body Styles */
 p {
-    color:white
+    color:#EE4540
 }
 
 body {
@@ -18,7 +18,26 @@ body {
    max-width: 960px;
    min-width: 640px;
    width: 95%;
-   background-color: black;
+   background-color: #2D142C;
+}
+
+section#leftColumn {
+    float:left;
+    clear: left;
+    width: 45%;
+    font-size: 2em;
+    padding: 1em;
+}
+
+section#rightColumn {
+    float: left;
+    clear: right;
+    max-width: 2px;
+    padding: 1em;
+}
+
+body > hr {
+  border: 2px solid red;
 }
 
 /* Header Styles */
@@ -33,25 +52,30 @@ body > header > p{
 body > header > img{
     display: block;
     margin: auto;
-    width: 500px;
     height: 100px;
 }
 
-body > header > nav.horizontalNavigation li {
+body > header > nav.navbar li {
     margin: auto;
     width: 20%;
 }
 
-nav.horizontalNavigation li {
+nav.navbar li {
    display: block;
    float: left;
-   border-color: green;
 }
 
-nav.horizontalNavigation a {
+nav.navbar a {
    display: block;
    text-align: center;
-   background-color: white;
-   font-size: 2em;
+   color: #EE4540;
+   font-size: 1.5em;
    line-height: 2em;
+   background-color: #510A32;
 }  
+
+/* Footer Styles */
+footer {
+    clear: both;
+    text-align: center;
+}
