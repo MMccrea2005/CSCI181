@@ -9,7 +9,21 @@ display: block;
 
 /* Body Styles */
 p {
-    color:#EE4540
+    color:#2c8dd8;
+    font-family: Consolas, Geneva, sans-serif;
+}
+
+h1 {
+    color: #ffd700;
+    text-align: center;
+}
+
+h2 {
+    color:#7ee769;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 body {
@@ -18,7 +32,7 @@ body {
    max-width: 960px;
    min-width: 640px;
    width: 95%;
-   background-color: #2D142C;
+   background-color: #121314;
 }
 
 section#leftColumn {
@@ -27,7 +41,18 @@ section#leftColumn {
     width: 45%;
     font-size: 2em;
     padding: 1em;
-    border: 1px solid red;
+    border: 1px solid #808080;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+section#smallLeft {
+    float: left;
+    clear: both;
+    width: 45%;
+    font-size: 2em;
+    padding: 1em;
+    border: 1px solid #808080;
     border-radius: 5%;
     margin-top: 10px;
 }
@@ -39,8 +64,15 @@ section#rightColumn {
     padding: 1em;
 }
 
+section#centerBox {
+    float: none;
+    color:#2c8dd8;
+    font-family: Consolas, Geneva, sans-serif;
+    font-size: 1.5em;
+}
+
 hr {
-  border: 2px solid red;
+  border: 2px solid #808080;
   margin: 5px;
   margin-top: 10px;
 }
@@ -52,6 +84,7 @@ body > header > p{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 body > header > img{
@@ -63,6 +96,8 @@ body > header > img{
 body > header > nav.navbar li {
     margin: auto;
     width: 20%;
+    padding-bottom: 30px;
+
 }
 
 nav.navbar li {
@@ -73,15 +108,16 @@ nav.navbar li {
 nav.navbar a {
    display: block;
    text-align: center;
-   color: #EE4540;
+   color: #ffd700;
    font-size: 1.5em;
    line-height: 2em;
-   background-color: #510A32;
    margin: auto;
+   background-color: #808080;
 }  
 
 /* Footer Styles */
 footer {
     clear: both;
     text-align: center;
+    color: #7ee769; 
 }
