@@ -33,6 +33,7 @@ body {
    min-width: 640px;
    width: 95%;
    background-color: #121314;
+   
 }
 
 section#leftColumn {
@@ -43,25 +44,30 @@ section#leftColumn {
     padding: 1em;
     border: 1px solid #808080;
     border-radius: 5%;
-    margin-top: 10px;
+    margin:auto;
+    display: block;
 }
 
 section#smallLeft {
     float: left;
-    clear: both;
+    clear: left;
     width: 45%;
     font-size: 2em;
     padding: 1em;
     border: 1px solid #808080;
     border-radius: 5%;
-    margin-top: 10px;
+    margin-top: 20px;
+    display: block;
+
+    
 }
 
 section#rightColumn {
-    float: left;
+    float: right;
     clear: right;
-    max-width: 2px;
+    width: 40%;
     padding: 1em;
+    margin-top: 0px;
 }
 
 section#centerBox {
@@ -80,17 +86,21 @@ hr {
 /* Header Styles */
 
 
-body > header > p{
-    text-align: center;
+body > header > h1{
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
-
+    font-size: 50px;
+    font-style: italic;
+    font-family: Consolas, Geneva, sans-serif;
 }
 
 body > header > img{
-    display: block;
     margin: auto;
     height: 100px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 body > header > nav.navbar li {
@@ -113,6 +123,7 @@ nav.navbar a {
    line-height: 2em;
    margin: auto;
    background-color: #808080;
+   padding: auto;
 }  
 
 /* Footer Styles */
