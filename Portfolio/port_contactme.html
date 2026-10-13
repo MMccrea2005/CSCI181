@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <link href="port_styles1.css" rel="stylesheet" />
+    <link href="port_forms_styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <body>
     <header>
-        <img src="dog_placeholder.jpg" alt="Header Image" />
+        <h1>Michael's HTML Portfolio</h1>
         <nav class="navbar">
             <ul>
                 <li><a href="port_index.html">Home</a></li>
@@ -20,9 +21,83 @@
             </ul>
         </nav>
     </header>
-        <footer>
+    <section>
+        <form id="survey" action="http://www.example.com/contactme" method="post">
+            <fieldset>
+                <legend>Visitor Information</legend>
+                <div class="formRow">
+                    <label for="name">Name:</label>
+                    <input name="visitorName" id="name" type="text" placeholder="Input your name">
+                </div>
+                <div class="formRow">
+                    <label for="email">Email:</label>
+                    <input name="visitorEmail" id="email" type="text" placeholder="Input your email">
+                </div>
+
+                <div class="formRow">
+                    <label for="visitorAccess">How are you accessing this website?</label>
+                    <br> <br>
+                    <select name="visitorDevice" id="visitorAccess"  size="4">
+                        <option value="PC">Personal Computer</option>
+                        <option value="Mobile">Mobile/Phone</option>
+                        <option value="Tablet">Tablet</option>
+                        <option value="HTML">Reading the HTML code directly</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Questions</legend>
+                <div class="formRow">
+                    <label>Is the website easy to navigate?</label>
+                    <fieldset class="question">
+                        <label for="yes">Yes</label>
+                        <input name="ques1" id="1Yes" value="yes" type="radio" />
+                        <label for="no">No</label>
+                        <input name="ques1" id="1No" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label>Which is your favorite chip flavor?</label>
+                    <fieldset class="question">
+                        <label for="SCO">Sour Cream and Onion</label>
+                        <input name="ques2" id="SCO" type="checkbox" />
+                        <label for="BBQ">BBQ</label>
+                        <input name="ques2" id="BBQ" type="checkbox" />
+                        <label for="Che">Cheddar Cheese</label>
+                        <input name="ques2" id="Che" type="checkbox" />
+                        <label for="other">Other: </label>
+                        <input name="other" id="other" type="text" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label for="quesSpin">On a scale of 1-10, how would you rate your experience on this website?</label>
+                    <fieldset class="question">
+                        <input name="spin" id="quesSpin" type="number" value="1" step="1" min="0" max="10">
+                    </fieldset>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Final Comments</legend>
+                <div class="formRow">
+                    <label for="finalText">Any final comments?</label>
+                    <fieldset><textarea name="finalBox" id="finalText"></textarea></fieldset>
+                </div>
+            </fieldset>
+            <div id="buttons">
+                <input type="submit" value="All done" />
+                <input type="reset" value="Clear" />
+            </div>
+        </form>
+    </section>
+    <footer>
         <br>
         <hr>
-        <p>the footer is here</p>
+        <p>Michael McCrea | Great Falls College MSU | 2100 16th Avenue South </p>
     </footer>
 </body>

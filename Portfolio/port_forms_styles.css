@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* Form Styles */
+legend {
+    color:#2c8dd8;
+    font-family: Consolas, Geneva, sans-serif;
+    padding: 10px;
+    font-size: 2em;
+    font-style: italic;
+}
+
+label {
+    color:#2c8dd8;
+    font-family: Consolas, Geneva, sans-serif;
+    margin: 10px;
+    padding-bottom: 10px;
+    font-style: bold;
+}
+
+input {
+    color: black;
+    font-family: Consolas, Geneva, sans-serif;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+fieldset {
+    text-align: center;
+    padding: auto;
+    margin-bottom: 10px;
+}
+
+div#buttons {
+    text-align: center;
+    color: #ffd700;
+    font-family: Consolas, Geneva, sans-serif;
+
+}
+
+input[type='submit'], input[type='reset'] {
+    color:#2c8dd8;
+    border-radius: 5%;
+    font-size: 2em;
+}
+
+input:focus, select:focus, textarea:focus {
+   background-color: #ffd700;
+}
