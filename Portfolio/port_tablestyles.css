@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+section#maintable {
+    text-align:center;
+}
+
+table.skills {
+    background: #808080;
+    text-align: center;
+    color: black;
+    width: 50%;
+    margin: auto;
+
+}
+
+table.skills th  {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+table.skills tr{
+    border: black 10px;
+}
